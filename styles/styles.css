@@ -31,10 +31,14 @@ h1 a {
   font-weight: normal;
   margin: 1rem;
   color: var(--White);
+  transition: all 200ms ease-in-out;
 }
 
 .section-one {
-  background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%);
+  background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%) no-repeat;
+  background-image: url('../images/background.jpg');
+  background-position: right bottom;
+  background-size: cover;
   border-radius: 0 0 5rem 5rem;
 }
 
@@ -102,7 +106,7 @@ header ul li a:hover {
   border: none;
   width: 50%;
   color: var(--White);
-  background-color: var(--Purple);
+  background-color: var(--LightBlue);
   padding: 1.5rem 1rem;
   border-radius: .75rem;
   transition: all 200ms ease-in-out;
@@ -128,7 +132,7 @@ header ul li a:hover {
 
 
 .text-container button:hover {
-  background-color: #410b57;
+  background-color: #036;
 }
 
 
@@ -153,7 +157,8 @@ header ul li a:hover {
 }
 
 .grid-card {
-  background-color: rgba(1, 152, 253, 0.178);
+  background-color: rgba(1, 152, 253, 0.378);
+  cursor: pointer;
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
@@ -161,6 +166,11 @@ header ul li a:hover {
   justify-content: center;
   text-align: center;
   padding: 3rem;
+  transition: all 200ms ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
 }
 
 .grid-card h3 {
