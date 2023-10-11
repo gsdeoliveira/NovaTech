@@ -251,19 +251,19 @@ header ul li a:hover {
     padding: 2rem;
     position: absolute;
     background-color: var(--White);
-    filter: opacity(.95);
+    filter: opacity(.90);
     width: 50%;
     height: 100%;
     flex-direction: column;
-    animation: open_menu 500ms;
+    animation: 300ms open_menu;
   }
 
   @keyframes open_menu {
     0% {
-      width: 0%;
+      margin: 0 -50%;
     }
     100% {
-      width: 50%;
+      width: 0 0;
     }
   }
 
@@ -284,7 +284,7 @@ header ul li a:hover {
 
 
   .section-one header[data-menu='open'] ~ section {
-    padding-top: 47px;
+    padding-top: 43.78px;
   }
 
   header[data-menu='open'] h1 a {
