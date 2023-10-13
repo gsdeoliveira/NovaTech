@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
   font-size: 1.6rem;
 }
 
@@ -39,7 +40,6 @@ h1 a {
   font-weight: normal;
   margin: 1rem;
   color: var(--White);
-  transition: all 200ms ease-in-out;
 }
 
 .section-one {
@@ -73,13 +73,13 @@ header nav ul {
 }
 
 
-header ul li a {
+ul li a {
   color: var(--White);
   transition: all 200ms ease-in-out;
 }
 
 
-header ul li a:hover {
+ul li a:hover {
   color: var(--LightBlue);
 }
 
@@ -261,7 +261,55 @@ input#person-one:checked ~ .container-photos > label[for='person-one'] > img,
 input#person-two:checked ~ .container-photos > label[for='person-two'] > img,
 input#person-three:checked ~ .container-photos > label[for='person-three'] > img,
 input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
-  border: 5px solid var(--White);
+  border: 2px solid var(--White);
+  transform: scale(1.2);
+}
+
+/* ----------------------------------------------------- FOOTER----------------------------------------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  gap: 5rem;
+  background: linear-gradient(to right, #220E4A, #151B53);
+  margin-top: 10rem;
+}
+
+footer .logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo-nav h1 a {
+  font-size: 3.2rem;
+}
+
+footer .socials-copy {
+  color: var(--White);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .socials-copy div {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .socials-copy i:hover {
+  color: var(--LightBlue);
+  cursor: pointer;
+}
+
+footer .logo-nav nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+
+footer .logo-nav h1 a {
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
@@ -322,7 +370,6 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
     padding: 2rem;
     position: fixed;
     width: 100%;
-    transition: background 500ms ease-in-out;
   }
 
   header i.fa-solid {
@@ -334,15 +381,11 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
     left: 180px;
   }
 
-  header nav ul li a {
-    color: var(--White);
-  }
-
   header[data-menu='open'] {
     justify-content: unset;
     padding: 2rem;
     position: fixed;
-    background-color: var(--White);
+    background-color: var(--Black);
     filter: opacity(.90);
     width: 50%;
     height: 100%;
@@ -364,15 +407,22 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
   }
 
   header[data-menu='open'] nav {
-    color: var(--White);
     display: block;
     position: fixed;
   }
 
   header[data-menu='open'] nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     margin-top: 50px;
+  }
+
+  header[data-menu='open'] h1 a {
+    color: var(--White);
+  }
+
+  header[data-menu='open'] h1 i {
+    color: var(--White);
   }
 
   header h1 i {
@@ -381,6 +431,16 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
 
   .section-six {
     margin-top: 0;
+  }
+
+  footer .logo-nav, footer .socials-copy, footer .logo-nav nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  footer .logo-nav, footer .socials-copy {
+    gap: 2rem;
   }
 }
 

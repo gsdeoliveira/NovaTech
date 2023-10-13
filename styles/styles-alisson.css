@@ -103,22 +103,22 @@
   margin-top: 10rem;
   min-height: 40rem;
   padding: 3rem;
-  background-color: #2D003F;
-  border-radius: 2rem 2rem 0 0;
-
+  background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%);
+  border-radius: 2rem;
   color: #fff;
 }
 
 .section-four {
   padding: 2rem 5rem;  
+  margin-top: 10rem;
   min-height: 40rem;
   padding: 3rem;
-  background-color: #2D003F;
-  border-radius: 0 0 2rem 2rem;
+  background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%);
+  border-radius: 2rem;
   color: #fff;
 }
 
-.section-four img {
+.section-four iframe {
   width: 100%;
   border-radius: .6rem;
 }
@@ -135,5 +135,9 @@
 
   .section-align {
     flex-direction: column-reverse;
+  }
+
+  .section-four .section-align {
+    flex-direction: column;
   }
 }

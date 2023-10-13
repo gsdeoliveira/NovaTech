@@ -14,10 +14,10 @@ menu_icon.addEventListener('click', () => {
 
 function scroll() {
   if (window.scrollY > 200) {
-    header.style.background = 'rgba(10, 0, 25, 0.75)';
+    header.style.background = 'rgba(0, 0, 0, 0.9)';
   } else {
-    header.style.background = 'none';
-  } 
+    header.style.background = '';
+  }
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
