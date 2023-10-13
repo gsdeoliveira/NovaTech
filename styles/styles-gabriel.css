@@ -182,6 +182,80 @@ header ul li a:hover {
   width: 100%;
 }
 
+/* ----------------------------------------------------- SECTION FIVE ----------------------------------------------------- */
+
+.section-six {
+  background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%);
+  margin: 10rem 0rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: var(--White);
+}
+
+.section-six div {
+  margin: 2rem 0;
+}
+
+.section-six h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.section-six p {
+  text-align: center;
+}
+
+.section-six .comment {
+  padding: 0rem 5rem;
+  height: 45px;
+}
+
+.comment-name {
+  font-weight: bold;
+}
+
+.section-six .comment,  .section-six .container-photos {
+  margin: 5rem 0;
+}
+
+.container-photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-six input[type='radio'] {
+  width: 5rem;
+  height: 5rem;
+  display: none;
+}
+
+.section-six label img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.comment-one, .comment-two, .comment-three, .comment-four {
+  display: none;
+}
+
+input#person-one:checked ~ .comment-one,
+input#person-two:checked ~ .comment-two,
+input#person-three:checked ~ .comment-three,
+input#person-four:checked ~ .comment-four {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+input#person-one:checked ~ .container-photos > label[for='person-one'] > img,
+input#person-two:checked ~ .container-photos > label[for='person-two'] > img,
+input#person-three:checked ~ .container-photos > label[for='person-three'] > img,
+input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
+  border: 5px solid var(--White);
+}
+
 @media (max-width: 1200px) {
   body, html {
     font-size: 55%;
@@ -201,6 +275,13 @@ header ul li a:hover {
   .text-container form input {
     margin-top: .5rem;
 
+  }
+
+  input#person-one:checked ~ .comment-one,
+  input#person-two:checked ~ .comment-two,
+  input#person-three:checked ~ .comment-three,
+  input#person-four:checked ~ .comment-four {
+    gap: 2rem;
   }
 }
 
@@ -327,6 +408,21 @@ header ul li a:hover {
   header[data-menu='open'] i.fa-solid {
     left: 130px;
   }
+
+  .container-photos {
+    gap: 1rem;
+  }
+
+  .section-five label img {
+    width: 60px;
+  }
+
+  input#person-one:checked ~ .comment-one,
+  input#person-two:checked ~ .comment-two,
+  input#person-three:checked ~ .comment-three,
+  input#person-four:checked ~ .comment-four {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -334,144 +430,4 @@ header ul li a:hover {
     left: 110px;
   }
 
-}
-
-/* ----------------------------------------------------- SECTION FIVE ----------------------------------------------------- */
-.section-title {
-  font-size: 5rem;
-  text-align: center;
-  padding: 5rem 0 2rem 0;
-}
-
-.section-five {
-  margin: 50px 100px;  
-  min-height: 400px;
-
-  padding: 30px;
-}
-
-.section-align {
-  display: flex;
-  justify-content: space-around ;
-  align-items: center;
-}
-
-
-.inputs-align {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
-  flex-direction: column;
-
-  height: 12rem;
-}
-
-.inputs-container {
-  width: 400px;
-  height: 300px;
-}
-
-.text-align p{
-  margin: 20px 0;
-}
-
-.section-five span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-
-  text-align: center;
-
-  margin-bottom: 20px;
-}
-
-.section-five input {
-  border: none;
-  margin-top: 10px;
-
-  border: 1px solid #6669;
-  padding: 10px 5px;
-  width: 100%;
-
-  border-radius: .5rem;
-
-}
-
-.section-five textarea {
-  border-radius: .5rem;
-  border: none;
-  margin-top: 10px;
-
-  
-  border: 1px solid #6669;
-  font-size: 14px;
-  padding: 10px 5px;
-
-  width: 100%;
-  height: 100px;
-
-  margin-bottom: 10px;
-
-
-}
-
-.section-five button {
-  
-  border: none;
-  width: 50%;
-  color: var(--White);
-  background-color: var(--LightBlue);
-  padding: 1.5rem 1rem;
-  border-radius: .75rem;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-}
-
-.section-five button:hover {
-  background-color: #036;
-}
-
-
-/* ----------- */
-.section-three img {
-  width: 700px;
-  border-radius: .6rem;
-}
-
-.section-three p {
-  text-align: justify;
-  padding: 0px 70px;
-  color: #fff;
-}
-
-.section-three {
-  padding: 50px 100px;  
-  min-height: 400px;
-
-  padding: 30px;
-  background-color: #2D003F;
-
-  color: #fff;
-}
-
-.section-four {
-  padding: 50px 100px;  
-  min-height: 400px;
-
-  padding: 30px;
-  background-color: #2D003F;
-
-  color: #fff;
-}
-
-.section-four img {
-  width: 500px;
-  border-radius: .6rem;
-}
-
-.section-four p {
-  width: 600px;
-  text-align: justify;
 }
