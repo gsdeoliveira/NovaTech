@@ -182,11 +182,10 @@ header ul li a:hover {
   width: 100%;
 }
 
-/* ----------------------------------------------------- SECTION FIVE ----------------------------------------------------- */
+/* ----------------------------------------------------- SECTION SIX ----------------------------------------------------- */
 
 .section-six {
   background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%);
-  margin: 10rem 0rem;
   padding: 2rem;
   border-radius: 2rem;
   color: var(--White);
@@ -413,7 +412,7 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
     gap: 1rem;
   }
 
-  .section-five label img {
+  .section-six label img {
     width: 60px;
   }
 
