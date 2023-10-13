@@ -26,6 +26,14 @@ body {
   margin: 0 auto;
 }
 
+#avaliaçoes {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  padding-top: 3rem;
+}
+
 h1 a {
   font-family: 'Orbitron', sans-serif;
   font-weight: normal;
@@ -186,6 +194,7 @@ header ul li a:hover {
 
 .section-six {
   background: linear-gradient(180deg, #2D003F 1.81%, #036 97.06%);
+  margin-top: 10rem;
   padding: 2rem;
   border-radius: 2rem;
   color: var(--White);
@@ -304,13 +313,16 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   html, body {
     font-size: 45%;
   }
 
   header {
     padding: 2rem;
+    position: fixed;
+    width: 100%;
+    transition: background 500ms ease-in-out;
   }
 
   header i.fa-solid {
@@ -323,13 +335,13 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
   }
 
   header nav ul li a {
-    color: var(--Black);
+    color: var(--White);
   }
 
   header[data-menu='open'] {
     justify-content: unset;
     padding: 2rem;
-    position: absolute;
+    position: fixed;
     background-color: var(--White);
     filter: opacity(.90);
     width: 50%;
@@ -352,8 +364,9 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
   }
 
   header[data-menu='open'] nav {
-    color: var(--Black);
+    color: var(--White);
     display: block;
+    position: fixed;
   }
 
   header[data-menu='open'] nav ul {
@@ -362,22 +375,12 @@ input#person-four:checked ~ .container-photos > label[for='person-four'] > img {
     margin-top: 50px;
   }
 
-
-  .section-one header[data-menu='open'] ~ section {
-    padding-top: 43.78px;
-  }
-
-  header[data-menu='open'] h1 a {
-    color: black;
-  }
-
-
   header h1 i {
     color: var(--White);
   }
 
-  header[data-menu='open'] h1 i {
-    color: var(--Black);
+  .section-six {
+    margin-top: 0;
   }
 }
 
