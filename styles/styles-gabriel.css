@@ -385,6 +385,7 @@ footer .logo-nav h1 a {
     justify-content: unset;
     padding: 2rem;
     position: fixed;
+    z-index: 2;
     background-color: var(--Black);
     filter: opacity(.90);
     width: 50%;
@@ -491,5 +492,4 @@ footer .logo-nav h1 a {
   header[data-menu='open'] i.fa-solid {
     left: 110px;
   }
-
 }
